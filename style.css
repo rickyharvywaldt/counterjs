@@ -37,6 +37,7 @@ body {
   gap: 3rem;
   align-items: center;
   position: relative;
+  user-select: none;
 }
 
 .counter-box__title {
@@ -60,7 +61,6 @@ body {
   align-items: center;
   color: #37bcf8;
   cursor: pointer;
-  user-select: none;
 }
 
 .counter-box__btn:active {
