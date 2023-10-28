@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #845ec2,
+    #686ac5,
+    #4e73c1,
+    #3b79ba,
+    #357daf
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.counter-box {
+  width: 40rem;
+  height: 50rem;
+  background-color: #37bcf8;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+}
+
+.counter-box__title {
+  font-size: 3.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.counter-box__counter {
+  font-size: 15rem;
+}
+
+.counter-box__btn {
+  position: absolute;
+  bottom: 0;
+  width: 20rem;
+  height: 8rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #37bcf8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.counter-box__btn:active {
+  transform: translateY(1px);
+}
+
+.counter-box__btn--reset {
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+
+.counter-box__btn--decrement {
+  left: 0;
+  border-bottom-left-radius: 1rem;
+  border-right: 0.5px solid gray;
+}
+
+.counter-box__btn--increment {
+  left: 20rem;
+  border-bottom-right-radius: 1rem;
+  border-left: 0.5px solid gray;
+}
