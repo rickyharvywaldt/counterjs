@@ -6,7 +6,11 @@ const counterEl = document.querySelector(".counter-box__counter");
 let counter = 0;
 
 decrement.addEventListener("click", () => {
-  counter -= 1;
+  if (counter <= 0) {
+    counter = 0;
+  } else {
+    counter -= 1;
+  }
   counterEl.textContent = counter.toString();
 });
 

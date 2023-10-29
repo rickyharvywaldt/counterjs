@@ -29,7 +29,7 @@ body {
 .counter-box {
   width: 40rem;
   height: 50rem;
-  background-color: #37bcf8;
+  background-color: transparent;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@ body {
   align-items: center;
   position: relative;
   user-select: none;
+  border: 1px solid #fff;
 }
 
 .counter-box__title {
@@ -55,11 +56,11 @@ body {
   bottom: 0;
   width: 20rem;
   height: 8rem;
-  background-color: #fff;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #37bcf8;
+  color: #111;
   cursor: pointer;
 }
 
@@ -75,11 +76,13 @@ body {
 .counter-box__btn--decrement {
   left: 0;
   border-bottom-left-radius: 1rem;
-  border-right: 0.5px solid gray;
+  border-right: 0.5px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 .counter-box__btn--increment {
   left: 20rem;
   border-bottom-right-radius: 1rem;
-  border-left: 0.5px solid gray;
+  border-left: 0.5px solid #fff;
+  border-top: 1px solid #fff;
 }
